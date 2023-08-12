@@ -1,15 +1,6 @@
 table
   | Entity | Attribute | Data Type | Description |
   |-----|------|------|------|
-  | Accommodation | id | int | Primary key |
-  | type | varchar(255) | | Type of accommodation (e.g., single room, double room, apartment) |
-  | size | int | | Number of beds in the accommodation |
-  | price | int | | Price of the accommodation per night |
-  | availability | boolean | | Whether the accommodation is available |
-
-
-  |-----|------|------|------|
-
   | Booking | id | int | Primary key |
   | studentId | int | Foreign key to Student.id | ID of the student who made the booking |
   | accommodationId | int | Foreign key to Accommodation.id | ID of the accommodation that was booked |
